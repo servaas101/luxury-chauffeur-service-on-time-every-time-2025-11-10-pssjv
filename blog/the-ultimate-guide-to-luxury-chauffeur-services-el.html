@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury Chauffeur Service - Book Your Ride Instantly. Experience elite comfort with real-time tracking and corporate accounts.">
+    <meta name="keywords" content="chauffeur service, luxury transport, booking, elite comfort">
+    <meta name="author" content="Pogiso's Tours">
+    <title>Luxury Chauffeur Service - Book Your Ride Instantly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        
+        a {
+            color: #4A90E2;
+        }
+        
+        a:hover {
+            color: #3A7BC8;
+        }
+        
+        .btn-primary {
+            background-color: #4A90E2;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3A7BC8;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #000000;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #333333;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            border: 1px solid #E5E5E5;
+            padding: 2rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card {
+            background-color: #FFFFFF;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #F0F0F0;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #4A90E2;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease-in-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #F0F0F0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .testimonial-card {
+            background-color: #FFFFFF;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid #E5E5E5;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .star {
+            color: #FFD700;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #000000;
+        }
+        
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=1200&h=600&fit=crop') center/cover;
+            background-attachment: fixed;
+            color: #FFFFFF;
+            border-radius: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header Navigation -->
+    <header class="w-full">
+        <nav class="container mx-auto max-w-7xl px-8 md:px-16 py-4 md:py-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl md:text-2xl font-bold text-black">Pogiso's Tours</span>
+                </div>
+
+                <!-- Back Button -->
+                <a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv" class="text-black font-medium hover:text-blue-500 transition-colors duration-300 flex items-center gap-2">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12 md:py-16">
+        <article class="prose prose-lg max-w-none">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">The Ultimate Guide to Luxury Chauffeur Services: Elevate Your Transportation Experience</h1>
+            
+            <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=1200&h=675&fit=crop&q=80" alt="Luxury chauffeur service with premium black car and professional driver" class="w-full rounded-lg shadow-lg mb-8">
+            
+            <p class="mb-4 leading-relaxed text-gray-700">In today's fast-paced world, transportation has evolved far beyond simply getting from point A to point B. For discerning professionals, business executives, and individuals who value their time and comfort, luxury chauffeur services have become an essential part of their lifestyle. Whether you're attending important business meetings, traveling to the airport, or planning a special event, a premium chauffeur service offers an unmatched combination of elegance, reliability, and professionalism that transforms every journey into an exceptional experience.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">This comprehensive guide explores everything you need to know about luxury chauffeur services, from understanding the benefits to selecting the right provider for your needs. We'll delve into the features that distinguish premium services, the advantages they offer over traditional transportation, and how to maximize your investment in professional transportation solutions.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Understanding Luxury Chauffeur Services</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">A luxury chauffeur service represents far more than a simple ride from one location to another. It's a comprehensive transportation solution that combines professional expertise, premium vehicles, and exceptional customer service to deliver an experience that reflects your status and values. Unlike standard taxi services or ride-sharing platforms, luxury chauffeur services are built on principles of discretion, reliability, and personalized attention to detail.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">The foundation of any premium chauffeur service rests on its fleet of vehicles. These aren't ordinary cars—they're meticulously maintained, late-model luxury vehicles equipped with the finest amenities. From premium leather seating and advanced climate control systems to state-of-the-art entertainment systems and complimentary refreshments, every element is designed to provide maximum comfort during your journey.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">The Professional Driver Difference</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">What truly sets luxury chauffeur services apart is the caliber of their professional drivers. These aren't just people who know how to drive—they're trained professionals who have undergone extensive background checks, customer service training, and defensive driving courses. Premium chauffeur services employ drivers who understand the importance of discretion, punctuality, and professional conduct.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Professional chauffeurs are trained to anticipate client needs, maintain impeccable appearance and demeanor, and navigate complex traffic situations with expertise and composure. They understand that they represent their employer and the service provider, and they take pride in delivering exceptional service on every single journey.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Key Benefits of Luxury Chauffeur Services</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Investing in a luxury chauffeur service provides numerous tangible and intangible benefits that extend far beyond basic transportation. Understanding these advantages can help you make an informed decision about whether premium transportation is right for your lifestyle or business needs.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Time Efficiency and Productivity</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">One of the most valuable benefits of using a luxury chauffeur service is the reclamation of your time. Instead of navigating traffic, searching for parking, or dealing with the stress of driving, you can dedicate your transportation time to productive activities. Business professionals can respond to emails, prepare presentations, review documents, or simply relax and recharge before important meetings.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Studies consistently show that professionals who use chauffeur services report increased productivity and reduced stress levels. The average commuter spends 5-10 hours per week driving, time that could be redirected toward work, personal development, or leisure. For busy executives, this time savings translates directly into increased efficiency and better work-life balance.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Reliability and Peace of Mind</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">When you book a luxury chauffeur service, you're guaranteed punctuality and reliability. Professional services employ advanced GPS tracking and route optimization technology to ensure you arrive on time, every time. This is particularly crucial for business travelers who cannot afford to miss flights or arrive late to important meetings.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">The peace of mind that comes with knowing your transportation is arranged by professionals cannot be overstated. You don't have to worry about traffic conditions, parking, or navigating unfamiliar routes. Your chauffeur handles all these concerns, allowing you to focus on what truly matters.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Professional Image and Impression</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Arriving in a luxury vehicle with a professional chauffeur creates an immediate impression of success and professionalism. For business executives, entrepreneurs, and high-net-worth individuals, this image matters. Whether you're meeting with clients, attending industry conferences, or making important business pitches, arriving in style sets a positive tone for the interaction.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">The quality of transportation you use reflects on your personal brand and professional reputation. A luxury chauffeur service communicates that you value excellence, attention to detail, and professionalism—qualities that resonate positively with business associates, clients, and partners.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Technology Integration in Modern Chauffeur Services</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Today's luxury chauffeur services leverage cutting-edge technology to enhance the customer experience and ensure operational excellence. Understanding these technological features can help you appreciate the full value proposition of premium transportation services.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Real-Time GPS Tracking and Route Optimization</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Advanced GPS tracking systems allow you to monitor your driver's location in real-time, providing transparency and allowing you to adjust your schedule accordingly. Route optimization algorithms analyze traffic patterns, road conditions, and multiple possible routes to determine the fastest path to your destination. This technology ensures you arrive on time while minimizing fuel consumption and environmental impact.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Real-time tracking also enables chauffeur services to provide accurate arrival estimates, allowing you to plan your day more effectively. You can share tracking information with colleagues or clients, demonstrating your commitment to punctuality and professionalism.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Mobile App Booking and Management</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Modern luxury chauffeur services offer intuitive mobile applications that make booking rides incredibly simple. With just a few taps, you can schedule a ride, specify your preferences, and receive confirmation within seconds. These apps typically include features like saved locations, preferred vehicle selection, and payment management.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Digital platforms also enable corporate clients to manage multiple users, track expenses, generate reports, and maintain centralized billing—features that are invaluable for businesses managing employee transportation budgets.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Communication and Amenity Control</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Premium chauffeur services often provide communication systems that allow passengers to contact their driver, adjust climate control, control entertainment systems, and request specific amenities. Some services offer Wi-Fi connectivity, allowing you to stay connected during your journey, while others provide charging ports for electronic devices.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Choosing the Right Luxury Chauffeur Service</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">With numerous chauffeur services available, selecting the right provider requires careful consideration of several key factors. Understanding what to look for can help you make an informed decision that aligns with your needs and expectations.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Reputation and Track Record</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Research the service provider's reputation by reading customer reviews, checking ratings on independent platforms, and asking for references. Established companies with years of successful operation typically have a track record of reliability and customer satisfaction. Look for services that have been recognized by industry organizations or have received awards for excellence.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Fleet Quality and Maintenance</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Examine the quality and condition of the service's vehicle fleet. Premium chauffeur services maintain newer model luxury vehicles that are regularly serviced and inspected. Ask about their maintenance schedules, vehicle replacement cycles, and how they ensure vehicles are always in pristine condition.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Driver Selection and Training</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Inquire about the service's driver selection process, background check procedures, and training programs. Professional services conduct thorough background investigations, verify driving records, and provide ongoing customer service training. Ask whether drivers receive defensive driving instruction and how the service ensures consistent professionalism.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Pricing Transparency and Value</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Compare pricing among different providers, but remember that the cheapest option isn't always the best value. Look for transparent pricing structures with no hidden fees, and understand what's included in the quoted rates. Consider whether the service offers corporate packages, loyalty programs, or volume discounts that might provide better value for your usage patterns.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Luxury Chauffeur Services for Different Occasions</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Different situations call for different transportation solutions. Premium chauffeur services offer specialized options tailored to various needs and occasions.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Airport Transfers and Business Travel</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Airport transfers are among the most popular uses for luxury chauffeur services. Professional drivers monitor flight information, adjust pickup times based on arrivals, and ensure seamless transitions between airport and destination. This eliminates the stress of parking, navigating unfamiliar routes, or waiting for traditional transportation options.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Corporate Events and Client Entertainment</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">For corporate events, conferences, and client entertainment, chauffeur services provide professional transportation that reflects well on your organization. Whether you're transporting visiting executives, clients, or employees, luxury transportation demonstrates your commitment to professionalism and attention to detail.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Special Occasions and Celebrations</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Weddings, anniversaries, milestone celebrations, and other special occasions are enhanced by luxury transportation. Professional chauffeurs ensure you arrive in style, allowing you to focus on enjoying your event rather than worrying about driving or parking.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">The Corporate Advantage: Chauffeur Services for Businesses</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Organizations increasingly recognize the value of providing luxury chauffeur services for their executives and employees. Corporate transportation programs offer numerous benefits beyond simple convenience.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Enhanced Productivity and Efficiency</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">When employees use professional chauffeur services instead of driving themselves, they can dedicate travel time to productive work. Executives can prepare for meetings, review documents, or handle correspondence during commutes, effectively extending their productive hours.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Centralized Management and Reporting</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Corporate chauffeur services typically offer centralized billing, detailed reporting, and expense tracking capabilities. Finance departments can easily monitor transportation spending, track usage patterns, and generate reports for cost analysis. This level of organization and transparency simplifies budget management and expense allocation.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Professional Image and Client Relations</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Providing luxury transportation for clients and executives enhances your organization's professional image. It demonstrates that your company values excellence and is willing to invest in quality services, which positively influences client relationships and business negotiations.</p>
+
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Conclusion: Investing in Excellence</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Luxury chauffeur services represent more than a transportation option—they're an investment in your time, comfort, productivity, and professional image. In a world where time is increasingly precious and first impressions matter, premium transportation services offer tangible value that extends far beyond the cost of the service itself.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Whether you're a busy executive, a traveling professional, or someone who simply values comfort and reliability, luxury chauffeur services provide a solution that elevates your transportation experience. By combining professional expertise, premium vehicles, advanced technology, and exceptional customer service, these services deliver an experience that reflects your commitment to excellence.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">When selecting a chauffeur service, prioritize reputation, vehicle quality, driver professionalism, and transparent pricing. Look for providers that leverage technology to enhance the experience and offer customized solutions for your specific needs. With the right luxury chauffeur service, every journey becomes an opportunity to maximize your productivity, comfort, and professional impact.</p>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8 mb-8">
+                <p class="text-gray-800 font-medium mb-2">Ready to experience luxury transportation?</p>
+                <p class="text-gray-700 mb-4">Discover how Pogiso's Tours can transform your travel experience with premium chauffeur services, real-time tracking, and professional excellence.</p>
+                <a href="https://pogisostours.co.za/booking" class="btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Your Ride Now
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 md:py-20">
+        <div class="container mx-auto max-w-7xl px-8 md:px-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-12">
+                <!-- Column 1: About -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 flex items-center gap-2">
+                        <i class="fas fa-car text-blue-500"></i>
+                        Pogiso's Tours
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Premium luxury chauffeur service delivering excellence, reliability, and professional transportation for every journey.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv/#features" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Features</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv/#benefits" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv/#testimonials" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv/#faq" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv/#about" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://pogisostours.co.za/booking" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Book a Ride</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Corporate Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Airport Transfers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Event Transportation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Fleet Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Legal -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact & Legal</h4>
+                    <div class="space-y-4 mb-6 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-blue-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <a href="mailto:info@pogisostours.co.za" class="text-white hover:text-blue-500 transition-colors duration-300">info@pogisostours.co.za</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-phone text-blue-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Phone</p>
+                                <p class="text-white">+27 (0) 11 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <a href="privacy.html" class="block text-gray-400 hover:text-blue-500 transition-colors duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="block text-gray-400 hover:text-blue-500 transition-colors duration-300">Terms of Service</a>
+                        <a href="blog.html" class="block text-gray-400 hover:text-blue-500 transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+                <p>&copy; 2025 Pogiso's Tours. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-red-500"></i> for premium transportation excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
