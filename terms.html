@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury Chauffeur Service - Book Your Ride Instantly. Experience elite comfort with real-time tracking and corporate accounts.">
+    <meta name="keywords" content="chauffeur service, luxury transport, booking, elite comfort">
+    <meta name="author" content="Pogiso's Tours">
+    <title>Terms of Service - Luxury Chauffeur Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        
+        a {
+            color: #4A90E2;
+        }
+        
+        a:hover {
+            color: #3A7BC8;
+        }
+        
+        .btn-primary {
+            background-color: #4A90E2;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3A7BC8;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #000000;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #333333;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            border: 1px solid #E5E5E5;
+            padding: 2rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card {
+            background-color: #FFFFFF;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #F0F0F0;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #4A90E2;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease-in-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #F0F0F0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .testimonial-card {
+            background-color: #FFFFFF;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid #E5E5E5;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .star {
+            color: #FFD700;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #000000;
+        }
+        
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=1200&h=600&fit=crop') center/cover;
+            background-attachment: fixed;
+            color: #FFFFFF;
+            border-radius: 1.5rem;
+        }
+
+        .policy-content {
+            line-height: 1.8;
+        }
+
+        .policy-content h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        .policy-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #1a1a1a;
+        }
+
+        .policy-content p {
+            margin-bottom: 1rem;
+            color: #333333;
+        }
+
+        .policy-content ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-content li {
+            margin-bottom: 0.5rem;
+            color: #333333;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header Navigation -->
+    <header class="w-full">
+        <nav class="container mx-auto max-w-7xl px-8 md:px-16 py-4 md:py-6 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo -->
+                <a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl md:text-2xl font-bold text-black">Pogiso's Tours</span>
+                </a>
+
+                <!-- Back Button -->
+                <a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv" class="text-black font-medium hover:text-blue-500 transition-colors duration-300 flex items-center gap-2">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-28">
+        <div class="container mx-auto max-w-7xl px-8 md:px-16">
+            <div class="space-y-4">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                    Terms of Service
+                </h1>
+                <p class="text-lg md:text-xl font-medium text-gray-200">
+                    Please read these terms carefully before using our luxury chauffeur service.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Content Section -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto max-w-4xl px-8 md:px-16">
+            <div class="policy-content">
+                <!-- Introduction -->
+                <section>
+                    <h2>Introduction</h2>
+                    <p>
+                        Welcome to Pogiso's Tours ("Company," "we," "our," or "us"). These Terms of Service ("Terms") govern your use of our website, mobile application, and all services provided by Pogiso's Tours (collectively, the "Service"). By accessing or using our Service, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use our Service.
+                    </p>
+                    <p>
+                        Pogiso's Tours is a premium luxury chauffeur service provider committed to delivering exceptional transportation experiences. Our Service includes ride booking, real-time tracking, corporate transportation solutions, and related services designed to meet the highest standards of professionalism and quality.
+                    </p>
+                    <p>
+                        These Terms were last updated on January 1, 2025. We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website or application. Your continued use of the Service following the posting of revised Terms means you accept and agree to the changes.
+                    </p>
+                </section>
+
+                <!-- User Agreements -->
+                <section>
+                    <h2>User Agreements and Eligibility</h2>
+                    
+                    <h3>Age and Legal Capacity</h3>
+                    <p>
+                        By using our Service, you represent and warrant that you are at least 18 years of age and possess the legal capacity to enter into binding contracts. If you are under 18, you may only use the Service with the express permission and supervision of a parent or legal guardian who agrees to be bound by these Terms.
+                    </p>
+
+                    <h3>Account Registration</h3>
+                    <p>
+                        To use certain features of our Service, you may be required to create an account. You agree to provide accurate, current, and complete information during the registration process. You are responsible for maintaining the confidentiality of your account credentials and password. You agree to accept responsibility for all activities that occur under your account.
+                    </p>
+                    <p>
+                        You must notify us immediately of any unauthorized use of your account or any other breach of security. We are not liable for any loss or damage arising from your failure to protect your account information.
+                    </p>
+
+                    <h3>Account Termination</h3>
+                    <p>
+                        We reserve the right to terminate or suspend your account and access to our Service at any time, for any reason, with or without notice. Cause for termination includes, but is not limited to: violation of these Terms, fraudulent activity, abusive behavior toward our staff or drivers, or violation of applicable laws.
+                    </p>
+
+                    <h3>User Responsibilities</h3>
+                    <p>
+                        You agree to use our Service only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of the Service. Prohibited behavior includes:
+                    </p>
+                    <ul>
+                        <li>Harassing or causing distress or inconvenience to any person</li>
+                        <li>Obscene or abusive language or behavior</li>
+                        <li>Disrupting the normal flow of dialogue within our Service</li>
+                        <li>Attempting to gain unauthorized access to our systems</li>
+                        <li>Transmitting viruses or malicious code</li>
+                        <li>Engaging in any form of fraud or deception</li>
+                    </ul>
+                </section>
+
+                <!-- Acceptable Use -->
+                <section>
+                    <h2>Acceptable Use Policy</h2>
+                    
+                    <h3>Permitted Use</h3>
+                    <p>
+                        Our Service is provided for your personal, non-commercial use. You may use the Service to book transportation services, track your ride in real-time, manage your account, and access related features as intended. You may not use the Service for any illegal purpose or in violation of these Terms.
+                    </p>
+
+                    <h3>Prohibited Activities</h3>
+                    <p>
+                        You agree not to engage in any of the following prohibited activities:
+                    </p>
+                    <ul>
+                        <li>Reproducing, duplicating, copying, selling, reselling, or exploiting any portion of the Service without express written permission</li>
+                        <li>Attempting to gain unauthorized access to the Service or its related systems or networks</li>
+                        <li>Transmitting unsolicited or bulk communications through the Service</li>
+                        <li>Impersonating or attempting to impersonate any person or entity</li>
+                        <li>Uploading viruses, malware, or any code of destructive nature</li>
+                        <li>Collecting or tracking personal information of others without consent</li>
+                        <li>Spamming, phishing, or engaging in any form of harassment</li>
+                        <li>Using the Service to transport illegal goods or substances</li>
+                        <li>Violating any applicable laws or regulations</li>
+                        <li>Engaging in any activity that disrupts or interferes with the Service</li>
+                    </ul>
+
+                    <h3>Driver and Vehicle Conduct</h3>
+                    <p>
+                        Passengers agree to treat our drivers and vehicles with respect. Passengers must not:
+                    </p>
+                    <ul>
+                        <li>Engage in abusive, threatening, or harassing behavior toward drivers or staff</li>
+                        <li>Damage or vandalize our vehicles</li>
+                        <li>Consume alcohol or use illegal substances in our vehicles</li>
+                        <li>Smoke or vape in our vehicles</li>
+                        <li>Transport weapons, explosives, or hazardous materials</li>
+                        <li>Violate the driver's reasonable requests regarding vehicle rules</li>
+                    </ul>
+                    <p>
+                        Violations of these conduct requirements may result in immediate termination of service, account suspension, and potential legal action.
+                    </p>
+
+                    <h3>Payment and Billing</h3>
+                    <p>
+                        You agree to pay all charges associated with your use of the Service. By providing payment information, you authorize us to charge your account for services rendered. You are responsible for maintaining accurate payment method information. We reserve the right to decline any transaction that appears suspicious or unauthorized.
+                    </p>
+                    <p>
+                        Pricing is subject to change without notice. You will be informed of any price changes before confirming your booking. All prices are displayed in the currency specified in your region.
+                    </p>
+                </section>
+
+                <!-- Limitation of Liability -->
+                <section>
+                    <h2>Limitation of Liability and Disclaimers</h2>
+                    
+                    <h3>Disclaimer of Warranties</h3>
+                    <p>
+                        The Service is provided on an "as-is" and "as-available" basis. We make no warranties, expressed or implied, regarding the Service. We disclaim all warranties, including but not limited to:
+                    </p>
+                    <ul>
+                        <li>Implied warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
+                        <li>Warranties regarding the accuracy, completeness, or reliability of the Service</li>
+                        <li>Warranties that the Service will be uninterrupted, error-free, or secure</li>
+                        <li>Warranties regarding the quality, safety, or suitability of our drivers or vehicles</li>
+                    </ul>
+
+                    <h3>Limitation of Liability</h3>
+                    <p>
+                        To the maximum extent permitted by law, Pogiso's Tours shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses arising from:
+                    </p>
+                    <ul>
+                        <li>Your use of or inability to use the Service</li>
+                        <li>Any unauthorized access to or alteration of your transmissions or data</li>
+                        <li>Any third-party conduct or content on the Service</li>
+                        <li>Any other matter relating to the Service</li>
+                    </ul>
+                    <p>
+                        Our total liability to you for any claim arising from the Service shall not exceed the amount you paid for the specific Service that gave rise to the claim, or $100, whichever is greater.
+                    </p>
+
+                    <h3>Assumption of Risk</h3>
+                    <p>
+                        You acknowledge that transportation services inherently carry certain risks, including but not limited to traffic accidents, delays, and exposure to weather conditions. You assume all risks associated with your use of our Service. You agree that Pogiso's Tours is not responsible for any injuries, damages, or losses resulting from your use of the Service, except where prohibited by law.
+                    </p>
+
+                    <h3>Third-Party Services</h3>
+                    <p>
+                        Our Service may include links to third-party websites and services. We are not responsible for the content, accuracy, or practices of these third-party services. Your use of third-party services is governed by their terms and policies, not these Terms. We do not endorse any third-party services and disclaim all liability for your interactions with them.
+                    </p>
+
+                    <h3>Force Majeure</h3>
+                    <p>
+                        Pogiso's Tours shall not be liable for any failure or delay in performance under these Terms resulting from causes beyond our reasonable control, including but not limited to natural disasters, acts of God, wars, terrorism, pandemics, government actions, or infrastructure failures.
+                    </p>
+                </section>
+
+                <!-- Intellectual Property -->
+                <section>
+                    <h2>Intellectual Property Rights</h2>
+                    <p>
+                        All content, features, and functionality of the Service, including but not limited to text, graphics, logos, images, and software, are the exclusive property of Pogiso's Tours or its content suppliers and are protected by international copyright, trademark, and other intellectual property laws.
+                    </p>
+                    <p>
+                        You are granted a limited, non-exclusive, non-transferable license to access and use the Service for your personal, non-commercial purposes. You may not reproduce, distribute, transmit, modify, or create derivative works of any content without our express written permission.
+                    </p>
+                </section>
+
+                <!-- Privacy and Data Protection -->
+                <section>
+                    <h2>Privacy and Data Protection</h2>
+                    <p>
+                        Your use of the Service is also governed by our Privacy Policy. Please review our Privacy Policy to understand our practices regarding the collection and use of your personal information. By using the Service, you consent to our collection and use of personal information as described in the Privacy Policy.
+                    </p>
+                    <p>
+                        We are committed to protecting your data and complying with applicable data protection regulations. We implement appropriate technical and organizational measures to safeguard your information against unauthorized access, alteration, disclosure, or destruction.
+                    </p>
+                </section>
+
+                <!-- Indemnification -->
+                <section>
+                    <h2>Indemnification</h2>
+                    <p>
+                        You agree to indemnify, defend, and hold harmless Pogiso's Tours and its officers, directors, employees, agents, and successors from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from or related to:
+                    </p>
+                    <ul>
+                        <li>Your use of the Service</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any applicable law or regulation</li>
+                        <li>Your violation of any third-party rights</li>
+                        <li>Your conduct while using the Service</li>
+                    </ul>
+                </section>
+
+                <!-- Dispute Resolution -->
+                <section>
+                    <h2>Dispute Resolution</h2>
+                    
+                    <h3>Governing Law</h3>
+                    <p>
+                        These Terms are governed by and construed in accordance with the laws of South Africa, without regard to its conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts located in South Africa.
+                    </p>
+
+                    <h3>Arbitration</h3>
+                    <p>
+                        Any dispute arising from or relating to these Terms or the Service shall be resolved through binding arbitration, except for disputes involving intellectual property rights or claims for injunctive relief. Arbitration shall be conducted in accordance with the rules of the Arbitration Foundation of Southern Africa (AFSA). The arbitration shall be conducted in English and shall take place in Johannesburg, South Africa.
+                    </p>
+
+                    <h3>Informal Resolution</h3>
+                    <p>
+                        Before initiating formal dispute resolution, you agree to attempt to resolve any dispute informally by contacting us at info@pogisostours.co.za. We will work with you in good faith to resolve any concerns.
+                    </p>
+                </section>
+
+                <!-- Modifications to Service -->
+                <section>
+                    <h2>Modifications to the Service</h2>
+                    <p>
+                        We reserve the right to modify, suspend, or discontinue the Service or any portion thereof at any time, with or without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuation of the Service.
+                    </p>
+                    <p>
+                        We may perform maintenance on the Service, which may result in temporary unavailability. We will attempt to provide notice of scheduled maintenance, but we do not guarantee such notice.
+                    </p>
+                </section>
+
+                <!-- Severability -->
+                <section>
+                    <h2>Severability</h2>
+                    <p>
+                        If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it enforceable, or if such modification is not possible, the provision shall be severed. The remaining provisions shall continue in full force and effect.
+                    </p>
+                </section>
+
+                <!-- Entire Agreement -->
+                <section>
+                    <h2>Entire Agreement</h2>
+                    <p>
+                        These Terms, together with our Privacy Policy and any other policies or agreements referenced herein, constitute the entire agreement between you and Pogiso's Tours regarding the Service and supersede all prior and contemporaneous agreements, understandings, and communications, whether written or oral.
+                    </p>
+                </section>
+
+                <!-- Contact Information -->
+                <section>
+                    <h2>Contact Information</h2>
+                    <p>
+                        If you have any questions about these Terms of Service, please contact us at:
+                    </p>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-4">
+                        <p class="font-semibold text-black mb-2">Pogiso's Tours</p>
+                        <p class="text-gray-700 mb-2">
+                            <strong>Email:</strong> <a href="mailto:info@pogisostours.co.za">info@pogisostours.co.za</a>
+                        </p>
+                        <p class="text-gray-700 mb-2">
+                            <strong>Phone:</strong> <a href="tel:+27011234567">+27 (0) 11 123 4567</a>
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>Address:</strong> 123 Business Street, Johannesburg, South Africa
+                        </p>
+                    </div>
+                    <p class="mt-6">
+                        We are committed to addressing your concerns and will respond to inquiries within 5 business days.
+                    </p>
+                </section>
+
+                <!-- Acknowledgment -->
+                <section>
+                    <h2>Acknowledgment</h2>
+                    <p>
+                        By using Pogiso's Tours' Service, you acknowledge that you have read these Terms of Service, understand them, and agree to be bound by them. If you do not agree with any part of these Terms, you must immediately cease using the Service.
+                    </p>
+                    <p>
+                        Thank you for choosing Pogiso's Tours for your luxury transportation needs.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 md:py-20">
+        <div class="container mx-auto max-w-7xl px-8 md:px-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-12">
+                <!-- Column 1: About -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 flex items-center gap-2">
+                        <i class="fas fa-car text-blue-500"></i>
+                        Pogiso's Tours
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Premium luxury chauffeur service delivering excellence, reliability, and professional transportation for every journey.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv#features" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Features</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv#benefits" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv#testimonials" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv#faq" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://servaas101.github.io/luxury-chauffeur-service-on-time-every-time-2025-11-10-pssjv#about" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://pogisostours.co.za/booking" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Book a Ride</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Corporate Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Airport Transfers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Event Transportation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Fleet Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Legal -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact & Legal</h4>
+                    <div class="space-y-4 mb-6 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-blue-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <a href="mailto:info@pogisostours.co.za" class="text-white hover:text-blue-500 transition-colors duration-300">info@pogisostours.co.za</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-phone text-blue-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-400">Phone</p>
+                                <p class="text-white">+27 (0) 11 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <a href="privacy.html" class="block text-gray-400 hover:text-blue-500 transition-colors duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="block text-gray-400 hover:text-blue-500 transition-colors duration-300">Terms of Service</a>
+                        <a href="blog.html" class="block text-gray-400 hover:text-blue-500 transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+                <p>&copy; 2025 Pogiso's Tours. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-red-500"></i> for premium transportation excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
